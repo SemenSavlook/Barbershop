@@ -96,7 +96,7 @@
 					пн—пт: с 10:00 до 22:00<br>
 					сб—вс: с 10:00 до 19:00
 				</p>
-				<a href="map.html" class="button">Как проехать</a>
+				<a href="map.html" class="button contacts-button-map">Как проехать</a>
 				<a href="contacts.html" class="button">Обратная связь</a>
 			</section>
 
@@ -131,7 +131,7 @@
 			<p class="footer-contacts">
 				Барбершоп «Бородинский»<br>
 				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-				<a href="map.html">Как нас найти?</a><br>
+				<a href="map.html" class="contacts-button-map1">Как нас найти?</a><br>
 				Телефон: +7 (812) 666-02-66
 			</p>
 			<div class="footer-social">
@@ -162,7 +162,7 @@
 
 	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
-		<p>Введите свой логин и пароль</p>
+		<p class="modal-description">Введите пожалуйста свой логин и пароль</p>
 		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 			<p>
 				<label class="visually-hidden" for="user-login">Логин</label>
@@ -172,9 +172,9 @@
 				<label class="visually-hidden" for="user-password">Пароль</label>
 				<input class="login-icon-password" type="password" id="user-password" name="password" placeholder="Пароль">
 			</p>
-			<p class="login-password-info">
+			<p class="login-help">
 				<label class="login-checkbox">
-					<input type="checkbox" name="remember" class="vissualy-hidden">
+					<input type="checkbox" name="remember" class="visually-hidden">
 					<span class="checkbox-indicator"></span>
 					Запомните меня
 				</label>
@@ -187,11 +187,12 @@
 
 	<section class="modal modal-map">
 		<h2 class="visually-hidden">Как до нас добраться</h2>
+			<iframe src="https://yandex.kz/map-widget/v1/-/CCQlEXvhCA" width="766" height="560" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
 		<p>
 			<img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 		</p>
 		<button class="modal-close" type="button">Закрыть</button>
 	</section>
-
+	<script src="script.js"></script>
 </body>
 </html>

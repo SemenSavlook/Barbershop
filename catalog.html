@@ -10,7 +10,7 @@
 <body class="inner-page">
 
 	<header class="main-header">
-		<nav class="main-navigation">
+		<nav class="main-navigation container">
 			<a href="index.html" class="main-header-logo">
 				<img src="img/logo.svg" width="111" height="24" alt="Логотип Барбершопа «Бородинский»">
 			</a>
@@ -46,7 +46,7 @@
 						<legend>Производители:</legend>
 						<ul>
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california">
 								<label for="filter-baxter-of-california">Baxter of California</label>
 							</li>
 							<li class="filter-option">
@@ -54,7 +54,7 @@
 								<label for="filter-mr-natty">Mr Natty</label>
 							</li>
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="suavecito" id="filter-suavecito" checked>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="suavecito" id="filter-suavecito">
 								<label for="filter-suavecito">Suavecito</label>
 							</li>
 							<li class="filter-option">
@@ -62,11 +62,11 @@
 								<label for="filter-malin-goetz">Malin+Goetz</label>
 							</li>
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="murrays" id="filter-murrays" disabled>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="murrays" id="filter-murrays">
 								<label for="filter-murrays">Murray's</label>
 							</li>
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="american-crew" id="filter-american-crew" checked>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="american-crew" id="filter-american-crew" disabled>
 								<label for="filter-american-crew">American Crew</label>
 							</li>
 						</ul>
@@ -232,7 +232,7 @@
 
 	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
-		<p>Введите свой логин и пароль</p>
+		<p class="modal-description">Введите пожалуйста свой логин и пароль</p>
 		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 			<p>
 				<label class="visually-hidden" for="user-login">Логин</label>
@@ -242,9 +242,9 @@
 				<label class="visually-hidden" for="user-password">Пароль</label>
 				<input class="login-icon-password" type="password" id="user-password" name="password" placeholder="Пароль">
 			</p>
-			<p class="login-password-info">
+			<p class="login-help">
 				<label class="login-checkbox">
-					<input type="checkbox" name="remember" class="vissualy-hidden">
+					<input type="checkbox" name="remember" class="visually-hidden">
 					<span class="checkbox-indicator"></span>
 					Запомните меня
 				</label>
