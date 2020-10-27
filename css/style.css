@@ -177,8 +177,6 @@ input[type="radio"].visually-hidden {
 .user-navigation a {
 	display: block;
 	padding: 25px 20px;
-
-	vertical-align: middle;
 	color: #fff;
 }
 
@@ -1167,12 +1165,9 @@ input[type="radio"].visually-hidden {
 
 .modal-login {
 	display: none;
-
-
-	width: 300px;
-	padding: 50px 80px;
-
-
+	width: 460px;
+  padding: 50px 80px;
+  box-sizing: border-box;
 }
 
 .modal-close {
