@@ -7,13 +7,6 @@ var password = popup.querySelector("[name=password]");
 var isStorageSupport = true;
 var storage = "";
 
-/*try {
-	storage = localStorage.getItem("login");
-} catch (err) {
-	isStorageSupport = false;
-}
-*/
-
 
 link.addEventListener("click", function (evt) {
 	evt.preventDefault();
@@ -42,7 +35,7 @@ form.addEventListener("submit", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-	// evt.preventDefault();
+
 	if (evt.keyCode === 27) {
 
 		if (popup.classList.contains("modal-show")) {
@@ -77,7 +70,7 @@ mapClose.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-	// evt.preventDefault();
+
 	if (evt.keyCode === 27) {
 		if (mapPopup.classList.contains("modal-show")) {
 			mapPopup.classList.remove("modal-show");
